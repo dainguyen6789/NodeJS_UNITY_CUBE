@@ -1,0 +1,21 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "cms in NODE.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "CMS"
+  },
+  "keywords": [
+    "CMS"
+  ],
+  "author": "Dai Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.15"
+  }
+}

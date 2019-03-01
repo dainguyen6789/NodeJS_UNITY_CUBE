@@ -1,0 +1,40 @@
+<h1>Create Post</h1>
+<form action="/admin/posts/edit/{{post.id}}?_method=put" method="post">
+
+    <div class="form-group">
+
+        <label for="RotX">Rot X</label>
+        <input type="number" name="RotX" class="form-control" value="{{post.RotX}}">
+    </div>
+    <div class="form-group">
+
+        <label for="RotY">Rot Y</label>
+        <input type="number" name="RotY" class="form-control" value="{{post.RotY}}">
+    </div>
+    <div class="form-group">
+
+        <label for="RotZ">Rot Z</label>
+        <input type="number" name="RotZ"  class="form-control" value="{{post.RotZ}}">
+    </div>
+
+    <div class="form-group">
+
+        <label for="RotX">Red</label>
+        <input type="number" name="Red" class="form-control" value="{{post.Red}}">
+    </div>
+    <div class="form-group">
+
+        <label for="RotY">Green</label>
+        <input type="number" name="Green"  class="form-control" value="{{post.Green}}">
+    </div>
+    <div class="form-group">
+
+        <label for="RotZ">Blue</label>
+        <input type="number" name="Blue"  class="form-control" value="{{post.Blue}}">
+    </div>
+
+
+
+
+    <button type="submit" class="btn btn-primary"> Submit </button>
+</form>

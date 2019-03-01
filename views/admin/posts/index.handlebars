@@ -1,0 +1,32 @@
+<h1>Rotation and Color Data</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           <td>Rot X</td>
+            <td>Rot Y</td>
+            <td>Rot Z</td>
+            <td>Red</td>
+            <td>Green</td>
+            <td>Blue</td>
+        </tr>
+
+    </thead>
+
+    <tbody>
+    {{#each post}}
+    <tr>
+
+        <td>{{RotX}}</td>
+        <td>{{RotY}}</td>
+        <td>{{RotZ}}</td>
+        <td>{{Red}}</td>
+        <td>{{Green}}</td>
+        <td>{{Blue}}</td>
+        <td> <a href="/admin/posts/edit/{{id}}" class="btn btn-info">Edit</a> </td>
+
+    </tr>
+    {{/each}}
+    </tbody>
+
+</table>
