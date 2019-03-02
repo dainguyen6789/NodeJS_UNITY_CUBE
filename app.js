@@ -18,6 +18,11 @@ const path=require('path');
 app.use(express.static(path.join(__dirname,'public')));
 // set View engine
 app.engine('handlebars',exphdbs({defaultLayout:'admin'}));
+
+
+
+
+
 app.set('view engine','handlebars');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());

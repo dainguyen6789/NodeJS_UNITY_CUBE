@@ -1,6 +1,6 @@
 const express=require('express');
 const router=express.Router();
-const Post=require('../../Model/Post');
+const Posta=require('../../Model/Post');
 x='10';
 y=parseInt(x,10)+5;
 
@@ -14,7 +14,7 @@ router.all('/*',(req,res,next)=>
 router.get('/',(req,res)=>{
 
 
-    Post.find({}).then(posts=>{
+    Posta.find({}).then(posts=>{
         res.render('admin/posts',{post: posts});
     });
 
@@ -23,7 +23,7 @@ router.get('/',(req,res)=>{
 
 router.get('/edit/:id',(req,res)=>{
 
-    Post.findOne({_id: req.params.id}).then(post=>
+    Posta.findOne({_id: req.params.id}).then(post=>
     {
         res.render('admin/posts/edit',{post: post});
     });
@@ -38,7 +38,7 @@ router.get('/create',(req,res)=>{
 
 router.post('/create',(req,res)=>
 {
-    const newPost=Post({
+    const newPost=Posta({
         RotX: req.body.RotX,
         RotY: req.body.RotY,
         RotZ: req.body.RotZ,
@@ -58,7 +58,7 @@ router.post('/create',(req,res)=>
 });
 
 router.put('/edit/:id',(req,res)=> {
-    Post.findOne({_id: req.params.id}).then(post => {
+    Posta.findOne({_id: req.params.id}).then(post => {
 
         //post.title=req.body.title;
         post.RotX = req.body.RotX;
